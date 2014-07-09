@@ -36,10 +36,7 @@
     CCNode* penguin = [CCBReader load:@"Penguin"];
     // position the penguin at the bowl of the catapult
     penguin.position = ccpAdd(_catapultArm.position, ccp(39, 140));
-    _contentNode.position = ccp(0, 0);
-    CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
-    [_contentNode runAction:follow];
-
+    
     // add the penguin to the physicsNode of this scene (because it has physics enabled)
     [_physicsNode addChild:penguin];
     
@@ -49,6 +46,9 @@
     [penguin.physicsBody applyForce:force];
     // ensure followed object is in visible area when starting
     
-    }
+    _contentNode.position = ccp(0, 100);
+    CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
+    [_contentNode runAction:follow];
+}
 
 @end

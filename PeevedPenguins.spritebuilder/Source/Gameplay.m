@@ -44,10 +44,11 @@
     CGPoint launchDirection = ccp(1, 0);
     CGPoint force = ccpMult(launchDirection, 8000);
     [penguin.physicsBody applyForce:force];
-    [CCActionFollow]
+
 }
 - (void) actionFollow {
     // ensure followed object is in visible area when starting
+    
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:_contentNode worldBoundary:self.boundingBox];
     [self runAction:follow];

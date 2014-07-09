@@ -78,8 +78,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-551</real>
-									<real>-47</real>
+									<real>-474</real>
+									<real>-46</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -174,8 +174,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-325</real>
-											<real>60</real>
+											<real>-270</real>
+											<real>61</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -263,8 +263,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-396</real>
-											<real>5</real>
+											<real>-344</real>
+											<real>0.0</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -352,8 +352,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-432.30078125</real>
-											<real>46.672767639160156</real>
+											<real>-423.30078125</real>
+											<real>40.672767639160156</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -381,6 +381,8 @@
 										<string>Bear.ccb</string>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -505,8 +507,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-541</real>
-											<real>-49</real>
+											<real>-473</real>
+											<real>-48</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -639,8 +641,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -837,8 +837,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>30</real>
-							<real>243</real>
+							<real>52</real>
+							<real>262</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>

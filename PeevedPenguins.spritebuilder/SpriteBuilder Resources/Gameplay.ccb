@@ -85,8 +85,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-536</real>
-											<real>-4</real>
+											<real>-533</real>
+											<real>-43</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -174,8 +174,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-284</real>
-											<real>107</real>
+											<real>-325</real>
+											<real>60</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -230,6 +230,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -263,8 +265,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-358</real>
-											<real>46</real>
+											<real>-396</real>
+											<real>5</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -352,8 +354,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-427.30078125</real>
-											<real>85.672767639160156</real>
+											<real>-474.30078125</real>
+											<real>47.672767639160156</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -505,8 +507,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>-534</real>
-											<real>-7</real>
+											<real>-539</real>
+											<real>-47</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1050,8 +1052,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

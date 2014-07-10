@@ -164,8 +164,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>196.50904846191406</real>
-						<real>263.15289306640625</real>
+						<real>179.62893676757812</real>
+						<real>258.91015625</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -202,8 +202,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>10.509048461914062</real>
-						<real>134.15290832519531</real>
+						<real>-6.371063232421875</real>
+						<real>129.91015625</real>
 					</array>
 				</dict>
 				<dict>
@@ -267,6 +267,8 @@
 					<real>500</real>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -508,8 +510,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>179</real>
-											<real>263</real>
+											<real>163</real>
+											<real>265</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1608,8 +1610,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

@@ -542,8 +542,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.071969747543335</real>
-							<real>1.350556492805481</real>
+							<real>1.5974529981613159</real>
+							<real>1.4548789262771606</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -573,6 +573,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -681,8 +683,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -806,8 +806,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.2981754541397095</real>
-							<real>1.3621251583099365</real>
+							<real>1.9365196228027344</real>
+							<real>1.4488890171051025</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -896,7 +896,7 @@
 						<key>value</key>
 						<array>
 							<real>0.97439420223236084</real>
-							<real>0.85543018579483032</real>
+							<real>0.81143832206726074</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -984,8 +984,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.94978111982345581</real>
-							<real>1.054871678352356</real>
+							<real>1.677066445350647</real>
+							<real>1.0407997369766235</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1372,13 +1372,13 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>0.69999998807907104</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
 					<real>0.30000001192092896</real>
 					<key>friction</key>
-					<real>0.30000001192092896</real>
+					<real>0.69999998807907104</real>
 					<key>points</key>
 					<array>
 						<array>

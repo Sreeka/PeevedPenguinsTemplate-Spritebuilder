@@ -32,6 +32,7 @@
     // nothing shall collide with our invisible nodes
     _pullbackNode.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
+    _physicsNode.collisionDelegate = self;
     
     
 }

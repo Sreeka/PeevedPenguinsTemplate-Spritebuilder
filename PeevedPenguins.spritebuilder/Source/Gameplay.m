@@ -10,6 +10,7 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "Penguin.h"
 @implementation Gameplay {
+    //static const float MIN_SPEED = 5.f;
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
@@ -19,7 +20,6 @@
     CCPhysicsJoint *_mouseJoint;
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
-    static const float MIN_SPEED = 5.f;
     CCAction *_followPenguin;
 }
 
@@ -40,9 +40,10 @@
     
 }
 - (void)update:(CCTime)delta
+
 {if (_currentPenguin.launched)
     // if speed is below minimum speed, assume this attempt is over
-    if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED){
+    if (ccpLength(_currentPenguin.physicsBody.velocity) < 5.f){
         [self nextAttempt];
         return;
     }

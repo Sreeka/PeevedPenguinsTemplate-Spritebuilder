@@ -16,6 +16,8 @@
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
+    CCNode *_currentPenguin;
+    CCPhysicsJoint *_penguinCatapultJoint;
 }
 
 // is called when CCB file has completed loading
@@ -41,8 +43,19 @@
     
     // start catapult dragging when a touch inside of the catapult arm occurs
     if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
-    {
-        // move the mouseJointNode to the touch position
+    {// create a penguin from the ccb-file
+        _currentPenguin = [CCBReader load:@"Penguin"];
+        // initially position it on the scoop. 34,138 is the position in the node space of the _catapultArm
+        CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
+        // transform the world position to the node space to which the penguin will be added (_physicsNode)
+        _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
+        // add it to the physics world
+        [_physicsNode addChild:_currentPenguin];
+        // we don't want the penguin to rotate in the scoop
+        _currentPenguin.physicsBody.allowsRotation = FALSE;
+        
+        // create a joint to keep the penguin fixed to the scoop until the catapult is released
+        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];        // move the mouseJointNode to the touch position
         _mouseJointNode.position = touchLocation;
         
         // setup a spring joint between the mouseJointNode and the catapultArm
@@ -58,6 +71,16 @@
     - (void)releaseCatapult {
         if (_mouseJoint != nil)
         {
+            // releases the joint and lets the penguin fly
+            [_penguinCatapultJoint invalidate];
+            _penguinCatapultJoint = nil;
+            
+            // after snapping rotation is fine
+            _currentPenguin.physicsBody.allowsRotation = TRUE;
+            
+            // follow the flying penguin
+            CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+            [_contentNode runAction:follow];
             // releases the joint and lets the catapult snap back
             [_mouseJoint invalidate];
             _mouseJoint = nil;

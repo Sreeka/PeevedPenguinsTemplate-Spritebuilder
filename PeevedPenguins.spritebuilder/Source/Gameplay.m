@@ -43,7 +43,7 @@
 
 {if (_currentPenguin.launched)
     // if speed is below minimum speed, assume this attempt is over
-    if (ccpLength(_currentPenguin.physicsBody.velocity) < 8.f){
+    if (ccpLength(_currentPenguin.physicsBody.velocity) < 12.f){
         [self nextAttempt];
         return;
     }

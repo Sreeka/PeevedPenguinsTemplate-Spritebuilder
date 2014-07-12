@@ -1572,10 +1572,10 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>460</real>
-							<real>285</real>
+							<real>960</real>
+							<real>1</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -1636,8 +1636,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>9</real>
-							<real>275</real>
+							<real>8</real>
+							<real>288</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>

@@ -9,7 +9,7 @@
 #import "MainScene.h"
 
 @implementation MainScene
-- (void)play {
+- (void)plays {
     CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:gameplayScene];
 }@end

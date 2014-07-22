@@ -414,7 +414,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>plays</string>
+							<string>play</string>
 							<integer>1</integer>
 						</array>
 					</dict>
